@@ -1,0 +1,61 @@
+<resources>
+
+    <style name="Theme.DailyDemo" parent="Theme.MaterialComponents.NoActionBar">
+
+        <item name="colorPrimary">@color/daily_teal</item>
+        <item name="colorPrimaryVariant">@color/daily_teal_dark</item>
+        <item name="colorOnPrimary">@color/daily_blue_dark</item>
+
+        <item name="colorSecondary">@color/daily_teal</item>
+        <item name="colorSecondaryVariant">@color/daily_teal_dark</item>
+        <item name="colorOnSecondary">@color/daily_blue_dark</item>
+
+        <item name="android:statusBarColor">#000</item>
+
+    </style>
+
+    <style name="TextAppearance.Daily.BodyMedium.Regular" parent="@style/TextAppearance.Material3.BodyMedium">
+        <item name="fontFamily">@font/sf_pro_regular</item>
+    </style>
+
+    <style name="TextAppearance.Daily.BodyMedium.Medium" parent="@style/TextAppearance.Material3.BodyMedium">
+        <item name="fontFamily">@font/sf_pro_medium</item>
+    </style>
+
+    <style name="TextAppearance.Daily.JoinTextInput" parent="@style/TextAppearance.Daily.BodyMedium.Regular">
+        <item name="fontFamily">@font/sf_pro_regular</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textColorHint">#DDD</item>
+    </style>
+
+    <style name="TextAppearance.Daily.LabelButton" parent="@style/TextAppearance.Material3.LabelMedium">
+        <item name="fontFamily">@font/sf_pro_medium</item>
+        <item name="android:textColor">@color/daily_blue_dark</item>
+    </style>
+
+    <style name="TextAppearance.Daily.MenuItem" parent="@style/TextAppearance.Daily.BodyMedium.Regular">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.Daily.UsernameDialogInput" parent="@style/TextAppearance.Daily.BodyMedium.Regular">
+        <item name="fontFamily">@font/sf_pro_regular</item>
+    </style>
+
+    <style name="ButtonAppearance.Daily.FilledButton.Primary" parent="@style/Widget.Material3.Button">
+        <item name="android:textAppearance">@style/TextAppearance.Daily.LabelButton</item>
+        <item name="android:textColor">@color/daily_blue_dark</item>
+        <item name="backgroundTint">@color/daily_teal</item>
+        <item name="cornerRadius">18dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="Widget.Daily.PopupMenu" parent="Widget.Material3.PopupMenu">
+        <item name="popupMenuBackground">@color/white</item>
+        <item name="android:itemBackground">@color/white</item>
+        <item name="android:itemTextAppearance">@style/TextAppearance.Daily.MenuItem</item>"
+    </style>
+
+</resources>

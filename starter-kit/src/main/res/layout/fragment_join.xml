@@ -1,0 +1,40 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="35dp"
+        tools:context="co.daily.android.starterkit.fragments.JoinFragment">
+
+        <include
+            android:id="@+id/segment_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/fragment_join_segment_text_input"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/segment_local_preview"/>
+
+        <include
+            android:id="@+id/segment_local_preview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            layout="@layout/fragment_join_segment_local_preview"
+            app:layout_constraintTop_toBottomOf="@id/segment_text_input"
+            app:layout_constraintBottom_toTopOf="@id/segment_join_button"/>
+
+        <include
+            android:id="@+id/segment_join_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            layout="@layout/fragment_join_segment_join_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/segment_local_preview"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,22 @@
+name: Build
+
+on:
+    push:
+    pull_request:
+    schedule:
+        -   cron: '00 2 * * 1'
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            -   uses: actions/checkout@v2
+
+            -   name: Debug build
+                run: ./gradlew assembleDebug
+
+            -   name: Upload built APK
+                uses: actions/upload-artifact@v2
+                with:
+                    name: demo-debug.apk
+                    path: starter-kit/build/outputs/apk/debug/starter-kit-debug.apk
