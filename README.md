@@ -5,16 +5,23 @@ This demo showcases a basic video chat app that uses Daily's native [Android SDK
 ## Prerequisites
 
 - [Sign up for a Daily account](https://dashboard.daily.co/signup).
-- [Create a Daily room URL](https://help.daily.co/en/articles/4202139-creating-and-viewing-rooms) to test a video call quickly, and then enter that URL into the demo _(this is NOT recommended for production apps!)_.
+- [Create a Daily room](https://help.daily.co/en/articles/4202139-creating-and-viewing-rooms), and then enter that URL into the demo. Manual room creation is only recommended for testing purposes -- in a production app we recommend creating Daily rooms [programmatically through our REST API](https://docs.daily.co/reference/rest-api/rooms/create-room).
 - Install [Android Studio](https://developer.android.com/studio) and its prerequisites. The [install](https://developer.android.com/studio/install) and [run](https://developer.android.com/studio/run) instructions ought to cover what you need.
 
 ## How the demo works
 
 In the demo app, a user must enter a URL for a [Daily room](https://docs.daily.co/reference#rooms), then press Join. The app will find the meeting room and join the call.
 
-Most of the call related logic in the app can be found in the `CallService`. This initializes a `CallClient`, which keeps track of important information about the meeting, like other participants (including their audio and video tracks) and the things they do on the call (e.g. muting their mic or leaving), and provides methods for interacting with the meeting. The app leverages this object to update its state accordingly, and to carry out user actions like muting or changing track-publishing statuses. When the user leaves the meeting room, the Call Client remains, but their call has ended. The Call Client is destroyed when the application exits.
+Most of the call-related logic in the app can be found in `DemoCallService`. This initializes a Daily `CallClient` instance, which is responsible for:
 
-When testing or running this demo, you'll likely use a room you've manually created for calls. A production application will likely need to use the [Daily REST API](https://docs.daily.co/reference/rest-api) to create rooms on the fly for your users, which necessitates the use of a sensitive Daily API key. You likely don't want to embed this key in a production app. We recommend running a web server and keeping sensitive things like API keys there instead.
+* Establishing a connection to the meeting room
+* Keeping track of other participants, including their audio and video tracks
+* Managing call settings, such as camera/microphone configuration
+* Performing actions such as sending custom messages, or leaving the call
+
+The call client is destroyed when the application exits.
+
+When testing or running this demo, you can use a room you've manually created for calls. A production application should use the [Daily REST API](https://docs.daily.co/reference/rest-api) to create rooms on the fly for your users, which necessitates the use of a sensitive Daily API key. For security reasons, you likely don't want to embed this key in a production app. We recommend running a web server and keeping sensitive things like API keys there instead.
 
 Please note this project is designed to work with rooms that have [privacy](https://www.daily.co/blog/intro-to-room-access-control/) set to `public`. If you are hardcoding a room URL, please bear in mind that token creation, pre-authorization, and knock-for-access have not been implemented here, meaning you may not be able to join non-public meeting rooms using this demo for now.
 
