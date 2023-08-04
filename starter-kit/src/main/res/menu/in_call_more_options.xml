@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/in_call_more_options_people"
+        android:icon="@drawable/more_options_people"
+        android:title="@string/people" />
+
+    <item
+        android:id="@+id/in_call_more_options_invite"
+        android:icon="@drawable/more_options_link"
+        android:title="@string/copy_link_to_invite" />
+
+</menu>

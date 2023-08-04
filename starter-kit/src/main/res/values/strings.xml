@@ -1,0 +1,31 @@
+<resources>
+
+    <string name="app_name">Daily Starter Kit</string>
+
+    <string name="join_input_hint_room_url">Room URL</string>
+    <string name="join_input_hint_username">Name</string>
+
+    <string name="set_up_cam_and_mic">Set up your camera and mic</string>
+
+    <string name="service_notification_title">Daily call in progress</string>
+    <string name="service_notification_message">Tap to return to the call.</string>
+    <string name="hangup_button">Leave</string>
+
+    <string name="join_meeting">Join meeting</string>
+    <string name="waiting_for_others_to_join">Waiting for others to join</string>
+    <string name="join">Join</string>
+
+    <string name="copy_link_to_invite">Copy link to invite</string>
+
+    <string name="menu_option_set_username">Set username…</string>
+
+    <string name="button_set">Set</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_close">Close</string>
+
+    <string name="people">People</string>
+
+    <string name="link_copied_to_clipboard">Link copied to clipboard</string>
+
+    <string name="join_error_invalid_url">Please specify a valid URL</string>
+</resources>

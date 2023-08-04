@@ -1,0 +1,66 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="co.daily.android.starterkit.fragments.JoinFragment">
+
+        <View
+            android:id="@+id/background_tap_intercept"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="35dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/waiting_for_others_heading"
+                style="@style/TextAppearance.Daily.BodyMedium.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/waiting_for_others_to_join"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <co.daily.android.starterkit.layouts.DailySquareAspectLayout
+                android:id="@+id/waiting_for_others_video_card_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal">
+
+                <co.daily.android.starterkit.views.ParticipantVideoView
+                    android:id="@+id/waiting_for_others_video_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </co.daily.android.starterkit.layouts.DailySquareAspectLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/copy_link_button"
+                style="@style/ButtonAppearance.Daily.FilledButton.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/sf_pro_medium"
+                android:text="@string/copy_link_to_invite"
+                android:textSize="18sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <co.daily.android.starterkit.views.InCallButtonsOverlay
+            android:id="@+id/buttonsOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+</layout>
