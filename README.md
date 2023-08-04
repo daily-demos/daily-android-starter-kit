@@ -1,4 +1,4 @@
-# A video chat app using the Daily Client SDK for Android
+# A video chat app using Daily's Client SDK for Android
 
 This demo showcases a basic video chat app that uses Daily's native [Android SDK](https://docs.daily.co/guides/products/mobile#introducing-dailys-native-mobile-libraries-beta) mobile library.
 
