@@ -10,7 +10,7 @@ This demo showcases a basic video chat app that uses Daily's native [Android SDK
 
 ## How the demo works
 
-In the demo app, a user must enter a URL for a [Daily Room](https://docs.daily.co/reference#rooms), then press Join. The app will find the meeting room and join the call.
+In the demo app, a user must enter a URL for a [Daily room](https://docs.daily.co/reference#rooms), then press Join. The app will find the meeting room and join the call.
 
 Most of the call related logic in the app can be found in the `CallService`. This initializes a `CallClient`, which keeps track of important information about the meeting, like other participants (including their audio and video tracks) and the things they do on the call (e.g. muting their mic or leaving), and provides methods for interacting with the meeting. The app leverages this object to update its state accordingly, and to carry out user actions like muting or changing track-publishing statuses. When the user leaves the meeting room, the Call Client remains, but their call has ended. The Call Client is destroyed when the application exits.
 
