@@ -25,7 +25,8 @@ Please note this project is designed to work with rooms that have [privacy](http
 3. Install dependencies by syncing your Android Studio project's gradle files using the Android Studio UI popups.
 4. Build the project.
 5. Run the project, either on a simulator (which will not have webcam access, but which can send an image in place of a real camera stream), or on a connected Android device.
-6. Connect to the room URL you are testing, and to see it work, connect again either in another simulator, on another device, or directly using a web browser. Careful of mic feedback! You might want to mute one or both sides' audio if they're near each other.
+6. Connect to the room URL you are testing.
+7. To view a remote participant, connect again either in another simulator, on another device, or using a web browser. Careful of mic feedback! You might want to mute one or both sides' audio if they're near each other.
 
 ## Contributing and feedback
 
