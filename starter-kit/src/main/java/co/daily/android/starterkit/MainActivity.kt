@@ -144,10 +144,7 @@ class MainActivity : AppCompatActivity(), DemoStateListener {
 
     override fun onError(msg: String) {
         Log.e(TAG, "Got error: $msg")
-        Toast(this).apply {
-            setText("Error: $msg")
-            show()
-        }
+        Toast.makeText(this, "Error: $msg", Toast.LENGTH_LONG).show()
     }
 
     override fun onBackPressed() {
