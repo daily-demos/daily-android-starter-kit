@@ -24,6 +24,8 @@ import co.daily.model.RequestListener
 import co.daily.model.livestream.LiveStreamStatus
 import co.daily.model.recording.RecordingStatus
 import co.daily.model.streaming.StreamId
+import co.daily.model.transcription.TranscriptionMessageData
+import co.daily.model.transcription.TranscriptionStatus
 import co.daily.settings.BitRate
 import co.daily.settings.CameraInputSettingsUpdate
 import co.daily.settings.CameraPublishingSettingsUpdate
@@ -411,6 +413,22 @@ class DemoCallService : Service() {
         override fun onLiveStreamWarning(streamId: StreamId, message: String) {
             Log.i(TAG, "onLiveStreamWarning($streamId, $message)")
             listeners.forEach { it.onError("Live stream warning: $message") }
+        }
+
+        override fun onTranscriptionStarted(status: TranscriptionStatus) {
+            Log.i(TAG, "onTranscriptionStarted($status)")
+        }
+
+        override fun onTranscriptionStopped(updatedBy: ParticipantId?, stoppedByError: Boolean) {
+            Log.i(TAG, "onTranscriptionStopped($updatedBy, $stoppedByError)")
+        }
+
+        override fun onTranscriptionMessage(data: TranscriptionMessageData) {
+            Log.i(TAG, "onTranscriptionMessage($data)")
+        }
+
+        override fun onTranscriptionError(message: String) {
+            Log.i(TAG, "onTranscriptionError($message)")
         }
     }
 
