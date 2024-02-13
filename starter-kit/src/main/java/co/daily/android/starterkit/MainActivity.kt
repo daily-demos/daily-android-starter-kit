@@ -1,7 +1,9 @@
 package co.daily.android.starterkit
 
+import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.view.WindowManager
@@ -32,7 +34,8 @@ class MainActivity : AppCompatActivity(), DemoStateListener {
     private val requestPermissionLauncher =
         registerForActivityResult(RequestMultiplePermissions()) { result ->
             if (result.values.any { !it }) {
-                checkPermissions()
+                Toast.makeText(this, "Required permissions not granted", Toast.LENGTH_LONG).show()
+                finish()
             } else {
                 // permission is granted, we can initialize
                 initialize()
@@ -65,8 +68,14 @@ class MainActivity : AppCompatActivity(), DemoStateListener {
     }
 
     private fun checkPermissions() {
-        val permissionList = applicationContext.packageManager
-            .getPackageInfo(applicationContext.packageName, PackageManager.GET_PERMISSIONS).requestedPermissions
+        val permissionList = mutableListOf(
+            Manifest.permission.CAMERA,
+            Manifest.permission.RECORD_AUDIO,
+        )
+
+        if (Build.VERSION.SDK_INT >= 33) {
+            permissionList.add(Manifest.permission.POST_NOTIFICATIONS)
+        }
 
         val notGrantedPermissions = permissionList.map {
             Pair(it, ContextCompat.checkSelfPermission(applicationContext, it))
