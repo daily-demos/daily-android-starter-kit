@@ -16,7 +16,7 @@ jobs:
                 run: ./gradlew assembleDebug
 
             -   name: Upload built APK
-                uses: actions/upload-artifact@v2
+                uses: actions/upload-artifact@v4
                 with:
                     name: demo-debug.apk
                     path: starter-kit/build/outputs/apk/debug/starter-kit-debug.apk
