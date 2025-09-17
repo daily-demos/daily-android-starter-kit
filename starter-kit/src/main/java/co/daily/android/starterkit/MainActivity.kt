@@ -17,7 +17,7 @@ import co.daily.android.starterkit.fragments.JoinFragment
 import co.daily.android.starterkit.fragments.JoiningFragment
 import co.daily.android.starterkit.fragments.WaitingForOthersFragment
 import co.daily.android.starterkit.services.DemoActiveCallService
-import co.daily.core.dailydemo.R
+import co.daily.android.starterkit.R
 import co.daily.model.CallState
 
 private const val TAG = "MainActivity"

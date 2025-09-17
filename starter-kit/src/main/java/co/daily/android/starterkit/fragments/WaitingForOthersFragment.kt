@@ -8,8 +8,8 @@ import androidx.databinding.DataBindingUtil
 import co.daily.android.starterkit.DemoState
 import co.daily.android.starterkit.DemoStateListener
 import co.daily.android.starterkit.Utils
-import co.daily.core.dailydemo.R
-import co.daily.core.dailydemo.databinding.FragmentWaitingForOthersBinding
+import co.daily.android.starterkit.R
+import co.daily.android.starterkit.databinding.FragmentWaitingForOthersBinding
 
 class WaitingForOthersFragment : FragmentBase(), DemoStateListener {
 

@@ -6,8 +6,8 @@ import android.view.LayoutInflater
 import android.widget.FrameLayout
 import androidx.databinding.DataBindingUtil
 import co.daily.android.starterkit.ParticipantDetails
-import co.daily.core.dailydemo.R
-import co.daily.core.dailydemo.databinding.ParticipantVideoViewBinding
+import co.daily.android.starterkit.R
+import co.daily.android.starterkit.databinding.ParticipantVideoViewBinding
 import co.daily.view.VideoView
 
 class ParticipantVideoView(

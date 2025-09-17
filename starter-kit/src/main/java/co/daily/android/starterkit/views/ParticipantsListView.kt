@@ -10,8 +10,8 @@ import co.daily.android.starterkit.CallServiceConnection
 import co.daily.android.starterkit.ParticipantDetails
 import co.daily.android.starterkit.Preferences
 import co.daily.android.starterkit.adapters.ParticipantsAdapter
-import co.daily.core.dailydemo.R
-import co.daily.core.dailydemo.databinding.ParticipantsListBinding
+import co.daily.android.starterkit.R
+import co.daily.android.starterkit.databinding.ParticipantsListBinding
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 

@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import co.daily.core.dailydemo.R
+import co.daily.android.starterkit.R
 
 class LoadingFragment : Fragment() {
 
