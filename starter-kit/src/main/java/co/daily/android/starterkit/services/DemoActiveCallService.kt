@@ -16,7 +16,7 @@ import androidx.core.app.NotificationCompat
 import co.daily.android.starterkit.DemoState
 import co.daily.android.starterkit.DemoStateListener
 import co.daily.android.starterkit.MainActivity
-import co.daily.core.dailydemo.R
+import co.daily.android.starterkit.R
 import co.daily.model.CallState
 
 private const val TAG = "ActiveCallService"

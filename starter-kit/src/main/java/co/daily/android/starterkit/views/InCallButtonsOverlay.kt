@@ -11,8 +11,8 @@ import co.daily.android.starterkit.DemoState
 import co.daily.android.starterkit.ParticipantDetails
 import co.daily.android.starterkit.Utils
 import co.daily.android.starterkit.services.DemoCallService
-import co.daily.core.dailydemo.R
-import co.daily.core.dailydemo.databinding.InCallButtonsOverlayBinding
+import co.daily.android.starterkit.R
+import co.daily.android.starterkit.databinding.InCallButtonsOverlayBinding
 import co.daily.model.CallState
 import co.daily.model.RequestListener
 

@@ -12,9 +12,9 @@ import co.daily.android.starterkit.DemoStateListener
 import co.daily.android.starterkit.ParticipantDetails
 import co.daily.android.starterkit.Utils
 import co.daily.android.starterkit.services.DemoCallService
-import co.daily.core.dailydemo.R
-import co.daily.core.dailydemo.databinding.DialogUsernameBinding
-import co.daily.core.dailydemo.databinding.ParticipantListEntryBinding
+import co.daily.android.starterkit.R
+import co.daily.android.starterkit.databinding.DialogUsernameBinding
+import co.daily.android.starterkit.databinding.ParticipantListEntryBinding
 import co.daily.model.CallState
 import java.util.TreeSet
 

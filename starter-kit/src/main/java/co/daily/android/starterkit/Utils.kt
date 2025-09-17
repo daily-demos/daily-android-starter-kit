@@ -11,7 +11,7 @@ import android.widget.Toast
 import androidx.annotation.MenuRes
 import androidx.appcompat.view.ContextThemeWrapper
 import androidx.appcompat.widget.PopupMenu
-import co.daily.core.dailydemo.R
+import co.daily.android.starterkit.R
 
 
 object Utils {

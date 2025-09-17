@@ -16,8 +16,8 @@ import co.daily.android.starterkit.DemoStateListener
 import co.daily.android.starterkit.ParticipantDetails
 import co.daily.android.starterkit.layouts.DailyGridLayout
 import co.daily.android.starterkit.views.ParticipantVideoView
-import co.daily.core.dailydemo.R
-import co.daily.core.dailydemo.databinding.FragmentInCallBinding
+import co.daily.android.starterkit.R
+import co.daily.android.starterkit.databinding.FragmentInCallBinding
 import kotlin.math.roundToInt
 
 class InCallFragment : FragmentBase(), DemoStateListener {

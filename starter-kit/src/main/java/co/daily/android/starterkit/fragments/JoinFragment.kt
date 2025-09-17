@@ -10,8 +10,8 @@ import co.daily.android.starterkit.DemoState
 import co.daily.android.starterkit.DemoStateListener
 import co.daily.android.starterkit.Preferences
 import co.daily.android.starterkit.Utils
-import co.daily.core.dailydemo.R
-import co.daily.core.dailydemo.databinding.FragmentJoinBinding
+import co.daily.android.starterkit.R
+import co.daily.android.starterkit.databinding.FragmentJoinBinding
 import co.daily.model.CallState
 import co.daily.model.RequestListener
 import co.daily.view.VideoView
